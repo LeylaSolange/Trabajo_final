@@ -46,7 +46,7 @@ main{
     align-items: center;
     padding: 5%;
 }
-.section_1 article{
+.section1_article{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -60,7 +60,7 @@ main{
 .art_div_text{
    width: 450px;
 }
-.art_div_text h2{
+.art_div_text h3{
     font-size: 50px;
     color:rgba(35, 44, 80, 1);
     line-height: 57px;
@@ -80,4 +80,93 @@ main{
     width: 8vw;
     height: 5vh;
     cursor: pointer;
+}
+.section_2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(139, 72, 191, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;  
+}
+.section2_article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    margin: auto;
+    height: 168px;
+    text-align: left;  
+}
+.section2_article h3{
+    font-size: 36px;
+    width: 450px;
+    
+}
+.section2_article p{
+    font-size: 16px;
+    width: 450px;
+    margin-left: -469px;
+}
+.section_3{
+    display: grid;
+    grid-template-columns: repeat(2, 35vw);
+    grid-template-areas:
+        "a b"
+        "c c";
+    margin: auto;
+    align-items: center;
+    gap:15px;
+    padding-top: 50px;
+   
+}
+.section3_artA{
+    grid-area: a;
+    display: flex;
+    flex-direction: row;
+    width: 553px;
+    margin: auto;
+    gap: 10px;
+}
+.section3_artB{
+    grid-area: b;
+    display: flex;
+    flex-direction: row;
+    width: 553px;
+    margin: auto;
+    gap: 10px;
+
+}
+.section3_artC{
+    grid-area: c;
+    display: flex;
+    flex-direction: row;
+    width: 553px;
+    margin: auto;
+    gap: 10px;
+}
+.s3_aA_d1, .s3_aB_d1, .s3_aC_d1{
+   
+    font-size: 16px;
+    
+    display: flex;
+    align-items:flex-start;
+   
+}
+.s3_aA_d1 p, .s3_aB_d1 p, .s3_aC_d1 p{
+    background-color: rgba(139, 72, 191, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px, 25px, 10px, 25px;
+    width: 70px;
+    height: 43px;
+    text-align: center;
+    
+}
+.s3_aA_d2 p, .s3_aB_d2 p, .s3_aC_d2 p{
+    color: rgba(179, 178, 183, 1);
+    font-size: 17px;
+    line-height: 25px;
+    width: 500px;
+   
+
 }
