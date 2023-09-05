@@ -13,6 +13,9 @@ header div{
     align-items: center;
     justify-content: center;
 }
+header article{
+    display: none;
+}
 header div ul{
     display: flex;
     flex-direction: row;
@@ -24,14 +27,17 @@ header div ul{
 a{
     text-decoration: none;
 }
+a:hover{
+    color: rgba(36, 46, 82, 0.6);
+}
 header div button{
     background-color: rgba(139, 72, 191, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
     border-radius: 50px;
     font-size: 13px;
-    width: 8vw;
-    height: 5vh;
+    width: 134px;
+    height: 44px;
     box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.25);
     cursor:pointer;
 }
@@ -71,14 +77,14 @@ main{
     color: rgba(0, 0, 0, 1);
     line-height: 26px;
 }
-.art_div_text button{
+.art_div_text button, .section4_btn button{
     background-color: rgba(139, 72, 191, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
     border-radius: 50px;
     font-size: 13px;
-    width: 8vw;
-    height: 5vh;
+    width: 134px;
+    height: 44px;
     cursor: pointer;
 }
 .section_2{
@@ -109,15 +115,16 @@ main{
     margin-left: -469px;
 }
 .section_3{
+    background-color: rgba(250, 250, 250, 1);
     display: grid;
     grid-template-columns: repeat(2, 35vw);
     grid-template-areas:
         "a b"
         "c c";
-    margin: auto;
     align-items: center;
     gap:15px;
     padding-top: 50px;
+    justify-content: center;
    
 }
 .section3_artA{
@@ -126,7 +133,7 @@ main{
     flex-direction: row;
     width: 553px;
     margin: auto;
-    gap: 10px;
+    gap: 20px;
 }
 .section3_artB{
     grid-area: b;
@@ -134,7 +141,7 @@ main{
     flex-direction: row;
     width: 553px;
     margin: auto;
-    gap: 10px;
+    gap: 20px;
 
 }
 .section3_artC{
@@ -143,23 +150,24 @@ main{
     flex-direction: row;
     width: 553px;
     margin: auto;
-    gap: 10px;
+    gap: 20px;
 }
 .s3_aA_d1, .s3_aB_d1, .s3_aC_d1{
-   
     font-size: 16px;
-    
     display: flex;
     align-items:flex-start;
-   
+    justify-content: center;
 }
 .s3_aA_d1 p, .s3_aB_d1 p, .s3_aC_d1 p{
     background-color: rgba(139, 72, 191, 1);
     color: rgba(255, 255, 255, 1);
-    padding: 10px, 25px, 10px, 25px;
-    width: 70px;
+    width: 70px;    
     height: 43px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
     
 }
 .s3_aA_d2 p, .s3_aB_d2 p, .s3_aC_d2 p{
@@ -167,6 +175,390 @@ main{
     font-size: 17px;
     line-height: 25px;
     width: 500px;
-   
+}
+.section_4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.section4_title{
+    font-size: 39.21px;
+    color: rgba(36, 46, 83, 1);
+    font-weight: bolder;
+}
+.section4_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 455px;
+    height: 259.48px;
+    text-align: center;
+}
+.card img{
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+}
+.card div{
+    background-color: rgba(250, 250, 250, 1);
+    padding: 27px;
+}
+.card div h5{
+    font-size: 16px;
+    color: rgba(63, 72, 104, 1);
+    line-height: 16px;
+    padding-top: 15px;
 
 }
+.card div p{
+    width: 403px;
+    font-size: 16px;
+    color: rgba(185, 185, 193, 1);
+    line-height: 25px;
+
+}
+.section4_btn{
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+button:hover{
+    background-color: rgba(139, 72, 191, 0.7);
+}
+.section_5{
+    background-color: rgba(139, 72, 191, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 224px;
+    justify-content: space-around;
+}
+.section_5 article{
+    width: 408px;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bolder; 
+}
+.section_5 article button{
+    background-color: rgba(255, 255, 255, 1);
+    width: 134px;
+    height: 44px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(139, 72, 191, 1);
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 184px;
+
+}
+footer{
+    background-color: rgba(30, 30, 38, 1);
+    display: grid;
+    grid-template-areas: 
+    "a a c c c d d"
+    "b b c c c e e";
+    padding: 25px;
+    height: 247px;
+}
+.footer_div1{
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.footer_div2{
+    grid-area: b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 20px;
+}
+
+.footer_div3{
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer_div3 ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    gap:21px;
+    padding: 14px;
+    width: 392px;
+    list-style: none;
+}
+.footer_div4{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 54px;
+}
+.footer_div4 form{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 273px;
+}
+input[type="email"]{
+    width: 201px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 3px;
+}
+input[type="submit"]{
+    width: 64px;
+    height: 49px;
+    border-radius: 50px;
+    background-color: rgba(139, 72, 191, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer_div5{
+    grid-area: e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 93px;
+    color: rgba(140, 140, 148, 1);
+    font-size: 13px;
+}
+@media (max-width:599px) {
+    header{
+        width: 440px;
+        /* padding: 7px 0px; */
+        margin: 18px 0px 40px 0px;
+    }
+    .header_div_ul{
+        display: none;
+    }
+    header div button{
+        display: none;
+    }
+    header article{
+        display: flex;
+        cursor: pointer;
+        width: 47px;
+        height: 42px;
+        align-items: center;
+        font-size: 55px;
+    }
+    header div img{
+        width: 109px;
+        height: 27px;
+    }
+    .section_1{
+        width: 440px;
+        padding: 0px;
+        margin-bottom: 45px;
+    }
+    .section1_article{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .div_img{
+        width: 400px;
+        height: 340px;
+
+    }
+    .div_img img{
+        width: 400px;
+        height: 340px;
+    }
+    .art_div_text{
+        width: 400px;
+    }
+    .section_2{
+        display: flex;
+        flex-direction: column;
+        width: 440px;
+        background-color: rgba(60, 221, 243, 1);
+    }
+    .section2_article{
+        width: 400px;
+        height: 143px;
+    }
+    .p_desktop{
+        display: none;
+    }
+    .add_Content::before{
+        display: flex;
+        flex-direction: column;
+        width: 356px;
+        margin-left: 263px;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        color: rgba(255, 255, 255, 1);
+        content: "Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams";
+    }
+    .section_3{
+       display: flex;
+       flex-direction: column;
+       width: 440px;
+    }
+    .section_3 article {
+        gap: 1px
+
+    }
+    .section_3 article div h4{
+
+        height: 28px;
+        width: 347px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(139, 72, 191, 0.3);
+        position: relative;
+        bottom: 6.4px;
+        right: 14px;
+        justify-content: space-around;
+        /* margin-left: 5px; */
+        padding-left: 24px;
+    }
+
+    
+    .section_3 div:nth-child(2n+1){
+        width: 65px;
+        margin-left: 17px;
+        
+    }
+    .section_3 p:nth-child(2n+1){
+        width: 57px;
+        font-size: 14px;
+        height: 29px;
+    }
+    .section_3 div:nth-child(2n){
+        width: 428px;
+        
+
+    }
+    .section_3 p:nth-child(2n){
+        width: 331px;
+        /* margin: -12px; */
+        line-height: 23.52px;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        position: relative;
+        right: 56px;
+    }
+
+    
+    .s3_aA_d2, .s3_aB_d2, .s3_aC_d2{
+        width: 408px;
+    }
+    .section_4{
+        margin: 86px 0px 28px 0px;;
+        width: 440px;
+        height: 480px;
+        
+    }
+    .section4_cards{
+        width: 420px;
+        height: 478px;
+    }
+    .section4_cards div:nth-child(2n+1){
+        display: none;
+
+    }
+    .card div p{
+        width: 366px;
+    }
+    .section_5{
+        width: 440px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(60, 221, 243, 1);
+        height: 366px;
+    }
+    .section_5 article{
+        width: 325px;
+        align-items: center;
+        text-align: center;
+    }
+    .section_5 article button{
+        margin-left: 0px;
+        background-color: rgba(35, 44, 80, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+    footer{
+        padding: 0px;
+        width: 440px;
+        height: 535px;
+        align-items: center;
+        justify-content: center;
+        grid-template-areas: 
+        "d d d"
+        "c c c"
+        "c c c"
+        "b b b"
+        "a a a"
+        "e e e"
+    }
+    
+    .footer_div4{
+        margin-top: 30px;
+        height: 68px;
+        width: 440px;
+    }
+    .footer_div4 form{
+        height: 60px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    input[type="email"]{
+        padding: 0px 0px 0px 5px;
+        width: 285px;
+        
+    }
+    input[type="submit"]{
+        height: 45px;
+
+    }
+    .footer_div3{
+        margin-left: 60px;
+    }
+    .footer_div2{
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+        justify-content: space-evenly;
+        margin-bottom: 35px;
+    }
+    .footer_div5{
+        margin-left: 0px;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+
+   
+}
+
+
