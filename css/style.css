@@ -93,6 +93,7 @@ main{
     background-color: rgba(139, 72, 191, 1);
     color: rgba(255, 255, 255, 1);
     text-align: center;  
+    gap:80px;
 }
 .section2_article{
     display: flex;
@@ -174,7 +175,7 @@ main{
     color: rgba(179, 178, 183, 1);
     font-size: 17px;
     line-height: 25px;
-    width: 500px;
+    width: 437px;
 }
 .section_4{
     display: flex;
@@ -347,7 +348,7 @@ input[type="submit"]{
     color: rgba(140, 140, 148, 1);
     font-size: 13px;
 }
-@media (max-width:599px) {
+@media (max-width:480px) {
     header{
         width: 440px;
         /* padding: 7px 0px; */
