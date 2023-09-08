@@ -123,7 +123,7 @@ main{
         "a b"
         "c c";
     align-items: center;
-    gap:15px;
+    gap: 25px 107px;
     padding-top: 50px;
     justify-content: center;
    
@@ -134,7 +134,7 @@ main{
     flex-direction: row;
     width: 553px;
     margin: auto;
-    gap: 20px;
+    gap: 14px;
 }
 .section3_artB{
     grid-area: b;
@@ -142,7 +142,7 @@ main{
     flex-direction: row;
     width: 553px;
     margin: auto;
-    gap: 20px;
+    gap: 14px;
 
 }
 .section3_artC{
@@ -151,7 +151,7 @@ main{
     flex-direction: row;
     width: 553px;
     margin: auto;
-    gap: 20px;
+    gap: 14px;
 }
 .s3_aA_d1, .s3_aB_d1, .s3_aC_d1{
     font-size: 16px;
@@ -173,7 +173,7 @@ main{
 }
 .s3_aA_d2 p, .s3_aB_d2 p, .s3_aC_d2 p{
     color: rgba(179, 178, 183, 1);
-    font-size: 17px;
+    font-size: 16px;
     line-height: 25px;
     width: 437px;
 }
@@ -327,7 +327,7 @@ input[type="email"]{
     width: 201px;
     height: 44px;
     border-radius: 50px;
-    padding: 3px;
+    padding-left: 10px;
 }
 input[type="submit"]{
     width: 64px;
@@ -337,6 +337,7 @@ input[type="submit"]{
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     cursor: pointer;
+    
 }
 .footer_div5{
     grid-area: e;
@@ -399,6 +400,7 @@ input[type="submit"]{
         flex-direction: column;
         width: 440px;
         background-color: rgba(60, 221, 243, 1);
+        gap: 10px;
     }
     .section2_article{
         width: 400px;
