@@ -1,6 +1,7 @@
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
 }
+
 header{
     display: flex;
     flex-direction: row;
@@ -99,7 +100,6 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* text-align: center; */
     justify-content: center;
     margin: auto;
     height: 168px;
@@ -115,6 +115,7 @@ main{
     width: 450px;
     margin-left: -469px;
 }
+/* Ajustando diseño grid sección 3 en vista desktop*/
 .section_3{
     background-color: rgba(250, 250, 250, 1);
     display: grid;
@@ -265,6 +266,7 @@ button:hover{
     margin-left: 184px;
 
 }
+/* Ajustando diseño grid en footer desktop*/
 footer{
     background-color: rgba(30, 30, 38, 1);
     display: grid;
@@ -349,10 +351,10 @@ input[type="submit"]{
     color: rgba(140, 140, 148, 1);
     font-size: 13px;
 }
+/* Vista de móvil con una maximo de 480px */
 @media (max-width:480px) {
     header{
         width: 440px;
-        /* padding: 7px 0px; */
         margin: 18px 0px 40px 0px;
     }
     .header_div_ul{
@@ -409,6 +411,8 @@ input[type="submit"]{
     .p_desktop{
         display: none;
     }
+
+    /*Agregando contenido a párrafo con clase add_Content en la sección 2*/
     .add_Content::before{
         display: flex;
         flex-direction: column;
@@ -442,7 +446,7 @@ input[type="submit"]{
         padding-left: 24px;
     }
 
-    
+    /*Ajustando ancho y margen de izquierda a los hijos div impares de la clase section_3 */
     .section_3 div:nth-child(2n+1){
         width: 65px;
         margin-left: 17px;
@@ -460,7 +464,6 @@ input[type="submit"]{
     }
     .section_3 p:nth-child(2n){
         width: 331px;
-        /* margin: -12px; */
         line-height: 23.52px;
         display: flex;
         flex-direction: column;
@@ -508,6 +511,7 @@ input[type="submit"]{
         color: rgba(255, 255, 255, 1);
         margin-bottom: 28px;
     }
+    /*diseñando el estilo de grid en vista móvil*/
     footer{
         padding: 0px;
         width: 440px;
